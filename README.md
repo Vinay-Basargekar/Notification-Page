@@ -1,1 +1,6 @@
-# Notification-Page
+# Frontend Mentor - Notifications page solution
+
+### Screenshot
+
+![](./screenshot.jpg)
+

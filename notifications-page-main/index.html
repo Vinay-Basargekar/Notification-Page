@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript | Notifications page</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main>
+			<div class="content">
+				<div class="header">
+					<h2>Notifications <p class="count">3</p></h2>
+					<p class="markRead">Mark all as read</p>
+				</div>
+				<div class="notification">
+					<div class="ppls" id="markWeb">
+						<img src="./assets/images/avatar-mark-webber.webp" alt="markWeb" />
+						<div class="detail">
+							<p class="about">
+								<b>Mark Webber</b> <span class="opa">reacted to your recent post <span class="fweight">My first
+								tournament today!</span><span class="dot"></span></span>
+							</p>
+							<p class="time">1m ago</p>
+						</div>
+					</div>
+					<div class="ppls" id="Angela">
+						<img src="./assets/images/avatar-angela-gray.webp" alt="Angela" />
+						<div class="detail">
+							<p class="about"><b>Angela Gray</b> <span class="opa">followed you</span><span class="dot"></span></p>
+							<p class="time">5m ago</p>
+						</div>
+					</div>
+					<div class="ppls" id="Jacob">
+						<img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob" />
+						<div class="detail">
+							<p class="about">
+								<b>Jacob Thompson</b> <span class="opa">has joined your group Chess Club<span class="dot"></span>
+							</span></p>
+							<p class="time">1 day ago</p>
+						</div>
+					</div>
+					<div class="ppls" id="Rizky">
+						<img
+							src="./assets/images/avatar-rizky-hasanuddin.webp"
+							alt="Rizky"
+						/>
+						<div class="detail">
+							<p class="about">
+								<b>Rizky Hasanuddin</b> <span class="opa">sent you a private message
+							</p></span>
+							<p class="time">5 day ago</p>
+							<div class="info">
+								<p>
+									Hello, thanks for setting up the Chess Club. I've been a
+									member for a few weeks now and I'm already having lots of fun
+									and improving my game.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="ppls" id="Kimberly">
+						<img
+							src="./assets/images/avatar-kimberly-smith.webp"
+							alt="Kimberly"
+						/>
+						<div class="detail">
+							<p class="about">
+								<b>Kimberly Smith</b> <span class="opa">commented on your picture
+							</p></span>
+							<p class="time">1 week ago</p>
+						</div>
+					</div>
+					<div class="ppls" id="Nathan">
+						<img
+							src="./assets/images/avatar-nathan-peterson.webp"
+							alt="Nathan"
+						/>
+						<div class="detail">
+							<p class="about">
+								<b>Nathan Peterson</b> <span class="opa">reacted to your recent post <span class="fweight">
+                  5 end-game
+								strategies to increase your win rate
+                </span></span>
+							</p>
+							<p class="time">2 week ago</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+    <script src="script.js"></script>
+	</body>
 </html>
