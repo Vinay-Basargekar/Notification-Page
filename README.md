@@ -2,5 +2,5 @@
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./notifications-page-main/screenshot.png)
 
